@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Cats-R-Us</h1>
+        {% for cat in cat_list %}
+            <h4>Name: {{ cat.name }}</h4>
+            <h4>Age: {{ cat.age }}</h4>
+            <img src="{{ cat.picture }}">
+        {% endfor %}
+{% endblock %}
